@@ -1,0 +1,72 @@
+$menu-font: 'Titillium Web', sans-serif;
+$text-font: 'Source Sans Pro', sans-serif;
+$icon-color: #fff;
+$box-color: #777;
+$icon-size: 2.5em;
+
+.top-container {
+    background-image: url('../img/desktop/header_img.png');
+    height: 650px;
+}
+
+.top-header-row {
+    padding-top: 40px;
+}
+
+nav {
+    padding-top: 50px;
+}
+
+a[class="nav-link"] {
+    color: $icon-color;
+    font-family: $menu-font;
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+i.icon-top {
+    color: $icon-color;
+    font-size: $icon-size;
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}
+
+.middle-header-row {
+    height: 350px;
+}
+
+p.p-trailer {
+    font-family: $text-font;
+    font-weight: 500;
+    font-size: 24pt;
+    color: $icon-color;
+}
+
+.video {
+    border: 10px solid white;
+    box-sizing: content-box;
+    border-radius: 5px;
+    width: 560px;
+    height: 315px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 30px; 
+}
+
+.item {
+    float: right;
+    margin: 6px;
+    height: 230px;
+    width: 270px;
+    background-color: $box-color;
+}
+
+footer {
+    background-color: #3168ff;
+    height: 50px;
+}
+
+.p-footer {
+    color: $icon-color;
+}
