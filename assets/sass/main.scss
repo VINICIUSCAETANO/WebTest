@@ -1,8 +1,11 @@
 $menu-font: 'Titillium Web', sans-serif;
 $text-font: 'Source Sans Pro', sans-serif;
+$paragraph-font: 'Roboto', sans-serif;
 $icon-color: #fff;
 $box-color: #777;
-$icon-size: 2.5em;
+$title-font-color: #6d6d6d;
+$margin-bottom: 5%;
+$icon-size: 2em;
 
 .top-container {
     background-image: url('../img/desktop/header_img.png');
@@ -14,7 +17,11 @@ $icon-size: 2.5em;
 }
 
 nav {
-    padding-top: 50px;
+    padding-top: 40px;
+}
+
+.col-nav {
+    padding-left: 0;
 }
 
 a[class="nav-link"] {
@@ -27,8 +34,8 @@ a[class="nav-link"] {
 i.icon-top {
     color: $icon-color;
     font-size: $icon-size;
-    margin-left: 0.25em;
-    margin-right: 0.25em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
 }
 
 .middle-header-row {
@@ -54,19 +61,76 @@ p.p-trailer {
     bottom: 30px; 
 }
 
+.middle-article-row {
+    margin-bottom: $margin-bottom;
+}
+
+h1.h1-sobre {
+    text-align: left;
+    font-family: $text-font;
+    font-weight: 600;
+    font-size: 24pt;
+    color: $title-font-color;
+}
+
+p.p-sobre {
+    padding-top: 1em;
+    text-align: left;
+    font-family: $paragraph-font;
+    font-weight: lighter;
+    font-size: 12pt;
+    color: #707070;
+}
+
 .item {
+    text-align: center;
+    padding: 0.25em;
+    color: $icon-color;
     float: right;
-    margin: 6px;
-    height: 230px;
-    width: 270px;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
     background-color: $box-color;
 }
 
+.item i {
+    font-size: 3em;
+    padding-top: 1em;
+    padding-bottom: 0.25em;
+}
+
+.item p {
+    font-family: $text-font;
+    font-weight: 500;
+    font-size: 14pt;
+}
+
+.carousel-row {
+    margin-bottom: $margin-bottom;
+}
+
+h2.h2-contato {
+    color: $title-font-color;
+    font-family: $text-font;
+    font-weight: bold;
+    font-size: 24pt;
+    text-align: left;
+}
+
+.row-bottom {
+    margin-bottom: $margin-bottom;
+}
+
 footer {
+    padding-top: 1em;
+    padding-bottom: 1em;
     background-color: #3168ff;
     height: 50px;
 }
 
 .p-footer {
+    font-family: $paragraph-font;
+    font-weight: lighter;
+    font-size: 14pt;
     color: $icon-color;
 }
