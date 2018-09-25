@@ -1,5 +1,8 @@
 .top-container {
   background-image: url("../img/desktop/header_img.png");
+  background-origin: border-box;
+  background-position-x: center;
+  background-repeat: no-repeat;
   height: 650px;
 }
 
@@ -49,7 +52,7 @@ p.p-trailer {
   margin-left: auto;
   margin-right: auto;
   position: relative;
-  bottom: 30px;
+  bottom: 50px;
 }
 
 .middle-article-row {
@@ -96,6 +99,15 @@ p.p-sobre {
   font-size: 14pt;
 }
 
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  width: 50px;
+  height: 50px;
+}
+
+img.img-carousel {
+  width: 100%;
+}
+
 .carousel-row {
   margin-bottom: 5%;
 }
@@ -112,9 +124,30 @@ h2.h2-contato {
   margin-bottom: 5%;
 }
 
+.form-group {
+  margin-bottom: 2rem;
+}
+
+form.form-contato {
+  margin-top: 4em;
+}
+
+.g-recaptcha {
+  width: 100% !important;
+}
+
+img.img-recaptcha {
+  margin-bottom: 2rem;
+}
+
+.submit {
+  margin-bottom: 2rem;
+  text-align: right;
+}
+
 footer {
   padding-top: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
   background-color: #3168ff;
   height: 50px;
 }
