@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Desafio Designio - WOW</title>
-    <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,12 +34,14 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="#fale" target="_self">FALE CONOSCO</a>
                             </li>
-                            <a href="http://wwww.facebook.com" target="_blank">
-                                <i class="fab fa-facebook-square icon-top"></i>
-                            </a>
-                            <a href="http://www.instagram.com" target="_blank">
-                                <i class="fab fa-instagram icon-top"></i>
-                            </a>
+                            <div class="icons">
+                                <a href="http://wwww.facebook.com" target="_blank">
+                                    <i class="fab fa-facebook-square icon-top"></i>
+                                </a>
+                                <a href="http://www.instagram.com" target="_blank">
+                                    <i class="fab fa-instagram icon-top"></i>
+                                </a>
+                            </div>
                         </ul>
                     </nav>
                 </div>
@@ -136,10 +137,11 @@
                             </div>
                             <!--<div class="g-recaptcha" data-sitekey="6Lew8XEUAAAAAPusnfL9ZfwKq0pi6bNQlUC0lulq"></div>-->
                             <img class="img-fluid img-recaptcha" src="assets/img/desktop/recaptcha.png" alt="Recaptcha">
-                            <div class="submit">
-                                <input type="submit" value="ENVIAR MENSAGEM">
-                            </div>
                         </form>
+                        <div class="submit">
+                            <!--botão está fora do form porque quando estava dentro causava envio do form-->
+                            <button>ENVIAR MENSAGEM</button>
+                        </div>
                         <address>
                             <div class="send-email">
                                 <i class="far fa-envelope"></i>
@@ -161,17 +163,18 @@
         </div>
     </footer>
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400|Source+Sans+Pro:400,600,700|Titillium+Web:400,600,700,900"
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Source+Sans+Pro:400,600,700|Titillium+Web:400,600,700,900"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">   
     <link href="assets/css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/query.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="assets/js/maps.js"></script>
-    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/valida.js"></script>
     <script src='https://www.google.com/recaptcha/api.js'></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQZSbd8npf83Fu_jrQW0szZQxXkxMkTYw&callback=myMap"></script>
 </body>
